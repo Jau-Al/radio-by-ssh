@@ -1,7 +1,7 @@
 #!/bin/bash
-#Radio script for raspberry by Jaufré aligé
-#https://github.com/Jau-Al/radio-by-ssh
-#v0.3
+# Radio script for raspberry by Jaufré aligé
+# https://github.com/Jau-Al/radio-by-ssh
+# v0.3
 
 case $1 in
 inter )	echo "Now Playing France inter"
