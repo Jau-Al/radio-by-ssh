@@ -3,6 +3,7 @@ Very easy to install and use small script to make vlc play radios. Useful on ras
 
 INSTALL :
 Download radio script in your home directory, unzip it and enter the extrated directory :
+
 wget https://github.com/Jau-Al/radio-by-ssh/archive/master.zip && unzip master.zip && rm master.zip && cd radio-by-ssh-master/
 
 To install it :
