@@ -6,7 +6,7 @@ Download radio script in your home directory, unzip it and enter the extrated di
 wget https://github.com/Jau-Al/radio-by-ssh/archive/master.zip && unzip master.zip && rm master.zip && cd radio-by-ssh-master/
 
 To install it :  
-./radio install
+chmod +x radio && ./radio install
 It will copy itself in /usr/bin/radio
 
 USE :  
