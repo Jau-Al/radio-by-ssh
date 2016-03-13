@@ -10,7 +10,7 @@ To install it :
   
 chmod +x radio && ./radio install  
   
-It will copy itself in /usr/bin/radio
+It will copies itself in /usr/bin/radio
 
 USE :  
 "radio" alone gives commands list  
