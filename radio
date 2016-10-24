@@ -1,16 +1,16 @@
 #!/bin/bash
 # Radio script for raspberry by Jaufré aligé
 # https://github.com/Jau-Al/radio-by-ssh
-# v0.3
+# v0.4
 
 case $1 in
 inter )	echo "Now Playing France inter"
 	killall vlc	
-	cvlc http://audio.scdn.arkena.com/11008/franceinter-midfi128.mp3 &
+	cvlc http://direct.franceinter.fr/live/franceinter-midfi.mp3 &
 	;;
 info )	echo "Now Playing France Info"
 	killall vlc
-	cvlc http://audio.scdn.arkena.com/11006/franceinfo-midfi128.mp3 &
+	cvlc http://direct.franceinfo.fr/live/franceinfo-midfi.mp3 &
 	;;
 ouifm )	echo "Now Playing OuiFM"
 	killall vlc
@@ -36,6 +36,10 @@ rmf-cr	)	echo "Now Playing RMF Classic Rock"
 	killall vlc
 	cvlc http://www.miastomuzyki.pl/n/rmfclassicrock.pls &
 	;;
+rmf-bl  )       echo "Now Playing RMF Blues"
+        killall vlc
+        cvlc http://www.miastomuzyki.pl/n/rmfblues.pls &
+        ;;
 stop )	killall vlc
 	;;
 edit )  sudo nano /usr/bin/radio
@@ -69,6 +73,7 @@ Radios :\r
 	OuiFM blues : ouifm-blues\r
 	Nova Classic Rock : nova\r
 	RMF Hard and Hevy : rmf-hh\r
-	RMF Classic Rock : rmf-cr\n"
+	RMF Classic Rock : rmf-cr\r
+	RMF Blues : rmf-bl\n"
 	;;
 esac
